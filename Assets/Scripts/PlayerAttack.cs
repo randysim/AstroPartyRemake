@@ -32,7 +32,6 @@ public class PlayerAttack : MonoBehaviour
         Quaternion playerRotation = transform.rotation;
         Vector3 playerPos = transform.position;
         Vector3 playerDirection = transform.TransformDirection(Vector2.up);
-        Debug.Log(playerDirection);
         Vector3 spawnPos = playerPos + (-playerDirection);
 
         GameObject bullet = Instantiate(bulletPrefab, spawnPos, playerRotation);

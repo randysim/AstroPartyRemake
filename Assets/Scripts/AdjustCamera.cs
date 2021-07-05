@@ -2,8 +2,8 @@
 
 public class AdjustCamera : MonoBehaviour
 {
-    public Transform playerOne;
-    public Transform playerTwo;
+    public Transform playerOne = null;
+    public Transform playerTwo = null;
 
     private float originalSize = 0.5f;
     private Camera camRef;
@@ -12,6 +12,10 @@ public class AdjustCamera : MonoBehaviour
     private void Start()
     {
         camRef = GetComponent<Camera>();
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        playerOne = players[0].transform;
+        playerTwo = players[1].transform;
+
         originalSize = camRef.orthographicSize;
     }
 
