@@ -39,3 +39,7 @@ game object onto the client. make sure that it is compatible next time.
 When trying to learn how to make multiplayer, instead of making some random game and adding multiplayer ontop of it, you should have started with
 
 the lobbyManager and the multiplayer, and the game second, because you don't know how to write a game that is compatible for multiplayer
+
+# .gitignore
+
+make sure to add a gitignore on all the imported assets you used
